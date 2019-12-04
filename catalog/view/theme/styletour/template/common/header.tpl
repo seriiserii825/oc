@@ -102,8 +102,11 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="<?php echo $home; ?>">
+                                <?php if($home == $og_url) : ?>
                                 <img src="<?php echo $logo; ?>" alt="StyleTour">
-                                <span><?php echo $name; ?></span>
+                                <?php endif; ?>
+
+                                <span class="<?php echo $class; ?>"><?php echo $name; ?></span>
                             </a>
                         </div>
 
@@ -131,7 +134,6 @@
 									<?php endif; ?>
 								<?php endforeach; ?>
                             </ul>
-
                             <div class="nav navbar-nav navbar-right">
                                 <form class="navbar-form navbar-left" role="search" method="get" action="">
                                     <div class="input-group">
@@ -152,77 +154,8 @@
     </div><!-- /.main-menu-wrap -->
 </header>
 
-<section class="menu-carousel">
-    <div id="carousel" class="carousel fade" data-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators-wrap">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-                <li data-target="#carousel" data-slide-to="3"></li>
-            </ol>
-        </div><!-- /.carousel-indicators-wrap -->
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <!-- <img src="catalog/view/theme/styletour/img/slider.jpg" alt=""> -->
-                <div class="bgslide" style="background-image: url(catalog/view/theme/styletour/img/slider.jpg);"></div>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Women's Apparel</h1>
-                        <h3>T-Shirts, Dress Shirts, Tanks, Pants and More...</h3>
-                        <a href="#" class="btn-red">Shop Women’s Apparel</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="bgslide" style="background-image: url(catalog/view/theme/styletour/img/slider.jpg);"></div>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Women's Apparel 2</h1>
-                        <h3>T-Shirts, Dress Shirts, Tanks, Pants and More...</h3>
-                        <a href="#" class="btn-red">Shop Women’s Apparel</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="bgslide" style="background-image: url(catalog/view/theme/styletour/img/slider.jpg);"></div>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Women's Apparel 3</h1>
-                        <h3>T-Shirts, Dress Shirts, Tanks, Pants and More...</h3>
-                        <a href="#" class="btn-red">Shop Women’s Apparel</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="bgslide" style="background-image: url(catalog/view/theme/styletour/img/slider.jpg);"></div>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Women's Apparel 4</h1>
-                        <h3>T-Shirts, Dress Shirts, Tanks, Pants and More...</h3>
-                        <a href="#" class="btn-red">Shop Women’s Apparel</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</section>
-
-<section class="main-slogan">
-    <div class="container">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h1>
-    </div>
-</section>
+<!--<section class="main-slogan">-->
+<!--    <div class="container">-->
+<!--        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h1>-->
+<!--    </div>-->
+<!--</section>-->

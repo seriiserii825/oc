@@ -662,3 +662,6 @@ section.menu-carousel{
 	display: block;
 	padding-left: 15px;
 }
+.main-menu .navbar-brand span:not(.common-home){
+	margin-left: 20px;
+}
