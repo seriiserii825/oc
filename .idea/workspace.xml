@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a530224-187e-4ed0-8b39-a2b7b40c4286" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/header.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/header.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/home.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/home.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +32,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wp-invent-gaz" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -65,7 +66,11 @@
       <workItem from="1574976528193" duration="69000" />
       <workItem from="1574976613357" duration="144000" />
       <workItem from="1574976771653" duration="324000" />
-      <workItem from="1574977116242" duration="2080000" />
+      <workItem from="1574977116242" duration="2101000" />
+      <workItem from="1575008842550" duration="70000" />
+      <workItem from="1575042491468" duration="1558000" />
+      <workItem from="1575098812045" duration="2059000" />
+      <workItem from="1575269564433" duration="928000" />
     </task>
     <servers />
   </component>
@@ -94,21 +99,21 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="554" y="335" width="484" height="252" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.27.1600.873@0.27.1600.873" timestamp="1574976594706" />
-    <state x="583" y="207" width="426" height="508" key="FileChooserDialogImpl" timestamp="1574976592472">
+    <state x="583" y="207" width="426" height="508" key="FileChooserDialogImpl" timestamp="1575270875082">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="583" y="207" width="426" height="508" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1574976592472" />
-    <state x="304" y="98" key="SettingsEditor" timestamp="1574977780155">
+    <state x="583" y="207" width="426" height="508" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1575270875082" />
+    <state x="304" y="98" key="SettingsEditor" timestamp="1575269678487">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="304" y="98" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1574977780155" />
+    <state x="304" y="98" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1575269678487" />
     <state x="493" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1574976530739">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="493" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1574976530739" />
-    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup" timestamp="1574978585121">
+    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup" timestamp="1575043330869">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup/0.27.1600.873@0.27.1600.873" timestamp="1574978585121" />
+    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup/0.27.1600.873@0.27.1600.873" timestamp="1575043330869" />
   </component>
 </project>
