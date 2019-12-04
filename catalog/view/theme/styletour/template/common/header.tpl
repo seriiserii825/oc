@@ -65,7 +65,8 @@
                     <ul class="nav navbar-nav navbar-right">
 						<?php if ($logged): ?>
                             <li class="dropdown">
-                                <a href="<?= $account; ?>" class="dropdown-toggle" data-toggle="dropdown"><?= $text_account; ?><span
+                                <a href="<?= $account; ?>" class="dropdown-toggle"
+                                   data-toggle="dropdown"><?= $text_account; ?><span
                                             class="carret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="<?php echo $account; ?>"><?= $text_account; ?></a></li>
@@ -80,8 +81,7 @@
                             <li><a href="<?php echo $register; ?>">Signup</a></li>
 						<?php endif; ?>
 
-                        <li><a href="#" class="btn-red"><span class="glyphicon glyphicon-shopping-cart"></span>shopping
-                                cart</a></li>
+						<?php echo $cart; ?>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -101,19 +101,35 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img src="catalog/view/theme/styletour/img/logo.png"
-                                                                  alt="StyleTour"><span>StyleTour</span></a>
+                            <a class="navbar-brand" href="<?php echo $home; ?>">
+                                <img src="<?php echo $logo; ?>" alt="StyleTour">
+                                <span><?php echo $name; ?></span>
+                            </a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="main-menu">
                             <ul class="nav navbar-nav">
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">Men</a></li>
-                                <li><a href="#">Women</a></li>
-                                <li><a href="#">Kids</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">Sale</a></li>
+								<?php foreach ($categories as $category): ?>
+									<?php if ($category['children']): ?>
+                                        <li class="dropdown">
+                                            <a href="<?php echo $category['children'] ?>" class="dropdown-toggle"
+                                               data-toggle="dropdown"><?php echo $category['name']; ?><span
+                                                        class="carret"></span></a>
+                                            <ul class="dropdown-menu">
+												<?php foreach ($category['children'] as $child): ?>
+                                                    <li>
+                                                        <a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a>
+                                                    </li>
+												<?php endforeach; ?>
+                                            </ul>
+                                        </li>
+									<?php else: ?>
+                                        <li>
+                                            <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+                                        </li>
+									<?php endif; ?>
+								<?php endforeach; ?>
                             </ul>
 
                             <div class="nav navbar-nav navbar-right">
