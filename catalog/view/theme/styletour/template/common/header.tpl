@@ -14,11 +14,11 @@
 	<script src="catalog/view/theme/styletour/js/bootstrap.min.js"></script>
 
 	<?php foreach($links as $link): ?>
-        <link href="<?php echo $link['href']; ?>" rel="$link['rel']">
+        <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel'] ?>">
 	<?php endforeach; ?>
 
 	<?php foreach($styles as $style): ?>
-        <link href="<?php echo $style['href']; ?>" rel="$style['rel']">
+        <link href="<?php echo $style['href']; ?>" rel="<?php echo $style['rel'] ?>">
 	<?php endforeach; ?>
 
 	<?php foreach($scripts as $script): ?>
@@ -84,6 +84,7 @@
 <!--								<li><a href="#">currecy: rur</a></li>-->
 <!--							</ul>-->
 <!--						</li>-->
+                        <?php echo $currency; ?>
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right">

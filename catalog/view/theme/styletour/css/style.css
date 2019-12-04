@@ -658,3 +658,7 @@ section.menu-carousel{
 		display: block !important;
 	}
 }
+.dropdown-menu a {
+	display: block;
+	padding-left: 15px;
+}
