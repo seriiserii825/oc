@@ -21,6 +21,12 @@ h3{
 	background: #ec4835;
 }
 /* =============================header============================== */
+.menu-top {
+	margin-bottom: 20px;
+}
+.common-home .menu-top {
+	margin-bottom: 0;
+}
 .menu-top .navbar{
 	margin-bottom: 0;
 	background: #fff;
@@ -66,7 +72,7 @@ h3{
 	background: transparent;
 	border: none;
 }
-.main-menu{
+.common-home .main-menu{
 	position: absolute;
 	z-index: 21;
 	width: 100%;

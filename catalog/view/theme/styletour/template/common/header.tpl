@@ -35,7 +35,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="<?php echo $class; ?>">
 
 <header>
     <div class="menu-top">
@@ -154,8 +154,3 @@
     </div><!-- /.main-menu-wrap -->
 </header>
 
-<!--<section class="main-slogan">-->
-<!--    <div class="container">-->
-<!--        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h1>-->
-<!--    </div>-->
-<!--</section>-->
