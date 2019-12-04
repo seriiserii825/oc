@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a530224-187e-4ed0-8b39-a2b7b40c4286" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/catalog/view/theme/styletour/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/language.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/header.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/home.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/view/theme/styletour/template/common/home.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +33,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wp-invent-gaz" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/catalog/view/theme/styletour/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/catalog/view/theme/styletour/js" />
+      <recent name="$PROJECT_DIR$/catalog/language" />
+      <recent name="$PROJECT_DIR$/admin/language" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -71,6 +79,7 @@
       <workItem from="1575042491468" duration="1558000" />
       <workItem from="1575098812045" duration="2059000" />
       <workItem from="1575269564433" duration="928000" />
+      <workItem from="1575450003878" duration="5045000" />
     </task>
     <servers />
   </component>
@@ -103,17 +112,17 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="583" y="207" width="426" height="508" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1575270875082" />
-    <state x="304" y="98" key="SettingsEditor" timestamp="1575269678487">
+    <state x="304" y="98" key="SettingsEditor" timestamp="1575453365085">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="304" y="98" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1575269678487" />
+    <state x="304" y="98" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1575453365085" />
     <state x="493" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1574976530739">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="493" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1574976530739" />
-    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup" timestamp="1575043330869">
+    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup" timestamp="1575454991456">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup/0.27.1600.873@0.27.1600.873" timestamp="1575043330869" />
+    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup/0.27.1600.873@0.27.1600.873" timestamp="1575454991456" />
   </component>
 </project>

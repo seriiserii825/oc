@@ -8,24 +8,28 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,300&subset=latin,cyrillic' rel='stylesheet'
 	      type='text/css'>
 	<link href="catalog/view/theme/styletour/css/bootstrap.min.css" rel="stylesheet">
-	<link href="catalog/view/theme/styletour/css/style.css" rel="stylesheet">
-
-	<?php foreach($links as $link): ?>
-	<link href="<?php echo $link['href']; ?>" rel="$link['rel']">
-	<?php endforeach; ?>
-
-	<?php foreach($styles as $style): ?>
-	<link href="<?php echo $style['href']; ?>" rel="$style['rel']">
-	<?php endforeach; ?>
-
-    <?php foreach($scripts as $script): ?>
-	<script src="<?php echo $script; ?>"></script>
-    <?php endforeach; ?>
 
 	<script src="catalog/view/theme/styletour/js/modernizr.custom.17475.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="catalog/view/theme/styletour/js/bootstrap.min.js"></script>
+
+	<?php foreach($links as $link): ?>
+        <link href="<?php echo $link['href']; ?>" rel="$link['rel']">
+	<?php endforeach; ?>
+
+	<?php foreach($styles as $style): ?>
+        <link href="<?php echo $style['href']; ?>" rel="$style['rel']">
+	<?php endforeach; ?>
+
+	<?php foreach($scripts as $script): ?>
+        <script src="<?php echo $script; ?>"></script>
+	<?php endforeach; ?>
+
+	<link href="catalog/view/theme/styletour/css/style.css" rel="stylesheet">
+
+	<script src="catalog/view/theme/styletour/js/common.js"></script>
 	<script src="catalog/view/theme/styletour/js/scripts.js"></script>
+
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -54,28 +58,32 @@
 						<li><a href="#">Support</a></li>
 						<li><a href="#">Free Shipping Over $50</a></li>
 						<li><a href="#">Articles</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag"><img
-											src="catalog/view/theme/styletour/img/flag.jpg" alt=""></span>English <span
-										class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">France</a></li>
-								<li><a href="#">Russia</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">currecy: usd <span
-										class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">currecy: eur</a></li>
-								<li><a href="#">currecy: rur</a></li>
-							</ul>
-						</li>
+
+                        <?php echo $language; ?>
+<!--						--><?php //echo $currency; ?>
+
+<!--						<li class="dropdown">-->
+<!--							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag"><img-->
+<!--											src="catalog/view/theme/styletour/img/flag.jpg" alt=""></span>English <span-->
+<!--										class="caret"></span></a>-->
+<!--							<ul class="dropdown-menu">-->
+<!--								<li><a href="#">France</a></li>-->
+<!--								<li><a href="#">Russia</a></li>-->
+<!--								<li><a href="#">Something else here</a></li>-->
+<!--								<li role="separator" class="divider"></li>-->
+<!--								<li><a href="#">Separated link</a></li>-->
+<!--								<li role="separator" class="divider"></li>-->
+<!--								<li><a href="#">One more separated link</a></li>-->
+<!--							</ul>-->
+<!--						</li>-->
+<!--						<li class="dropdown">-->
+<!--							<a href="#" class="dropdown-toggle" data-toggle="dropdown">currecy: usd <span-->
+<!--										class="caret"></span></a>-->
+<!--							<ul class="dropdown-menu">-->
+<!--								<li><a href="#">currecy: eur</a></li>-->
+<!--								<li><a href="#">currecy: rur</a></li>-->
+<!--							</ul>-->
+<!--						</li>-->
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right">
