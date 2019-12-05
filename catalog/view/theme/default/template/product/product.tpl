@@ -25,19 +25,23 @@
                         <ul class="thumbnails">
 							<?php if ($thumb) { ?>
                                 <li><a class="thumbnail" href="<?php echo $popup; ?>"
-                                       title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>"
-                                                                                  title="<?php echo $heading_title; ?>"
-                                                                                  alt="<?php echo $heading_title; ?>"/></a>
+                                       title="<?php echo $heading_title; ?>">
+                                        <img src="<?php echo $thumb; ?>"
+                                             title="<?php echo $heading_title; ?>"
+                                             alt="<?php echo $heading_title; ?>"/>
+                                    </a>
                                 </li>
 							<?php } ?>
 							<?php if ($images) { ?>
 								<?php foreach ($images as $image) { ?>
                                     <li class="image-additional"><a class="thumbnail"
                                                                     href="<?php echo $image['popup']; ?>"
-                                                                    title="<?php echo $heading_title; ?>"> <img
+                                                                    title="<?php echo $heading_title; ?>">
+                                            <img
                                                     src="<?php echo $image['thumb']; ?>"
                                                     title="<?php echo $heading_title; ?>"
-                                                    alt="<?php echo $heading_title; ?>"/></a></li>
+                                                    alt="<?php echo $heading_title; ?>"/>
+                                        </a></li>
 								<?php } ?>
 							<?php } ?>
                         </ul>
@@ -139,11 +143,13 @@
                     <div class="btn-group">
                         <button type="button" data-toggle="tooltip" class="btn btn-default"
                                 title="<?php echo $button_wishlist; ?>"
-                                onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="fa fa-heart"></i>
+                                onclick="wishlist.add('<?php echo $product_id; ?>');">
+                            <i class="fa fa-heart"></i>
                         </button>
                         <button type="button" data-toggle="tooltip" class="btn btn-default"
                                 title="<?php echo $button_compare; ?>"
-                                onclick="compare.add('<?php echo $product_id; ?>');"><i class="fa fa-exchange"></i>
+                                onclick="compare.add('<?php echo $product_id; ?>');">
+                            <i class="fa fa-exchange"></i>
                         </button>
                     </div>
                     <h1><?php echo $heading_title; ?></h1>
@@ -165,7 +171,9 @@
                                     <h2><?php echo $price; ?></h2>
                                 </li>
 							<?php } else { ?>
-                                <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
+                                <li>
+                                    <span style="text-decoration: line-through;"><?php echo $price; ?></span>
+                                </li>
                                 <li>
                                     <h2><?php echo $special; ?></h2>
                                 </li>
@@ -186,6 +194,7 @@
 							<?php } ?>
                         </ul>
 					<?php } ?>
+
                     <div id="product">
 						<?php if ($options) { ?>
                             <hr>
@@ -286,7 +295,8 @@
                                         <button type="button"
                                                 id="button-upload<?php echo $option['product_option_id']; ?>"
                                                 data-loading-text="<?php echo $text_loading; ?>"
-                                                class="btn btn-default btn-block"><i
+                                                class="btn btn-default btn-block">
+                                            <i
                                                     class="fa fa-upload"></i> <?php echo $button_upload; ?></button>
                                         <input type="hidden" name="option[<?php echo $option['product_option_id']; ?>]"
                                                value="" id="input-option<?php echo $option['product_option_id']; ?>"/>
@@ -303,8 +313,10 @@
                                                    id="input-option<?php echo $option['product_option_id']; ?>"
                                                    class="form-control"/>
                                             <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-                </span></div>
+                <button class="btn btn-default" type="button">
+                    <i class="fa fa-calendar"></i></button>
+                </span>
+                                        </div>
                                     </div>
 								<?php } ?>
 								<?php if ($option['type'] == 'datetime') { ?>
@@ -320,7 +332,8 @@
                                                    class="form-control"/>
                                             <span class="input-group-btn">
                 <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
-                </span></div>
+                </span>
+                                        </div>
                                     </div>
 								<?php } ?>
 								<?php if ($option['type'] == 'time') { ?>
@@ -335,7 +348,8 @@
                                                    class="form-control"/>
                                             <span class="input-group-btn">
                 <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
-                </span></div>
+                </span>
+                                        </div>
                                     </div>
 								<?php } ?>
 							<?php } ?>
@@ -363,10 +377,12 @@
                                     class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
                         </div>
 						<?php if ($minimum > 1) { ?>
-                            <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?>
+                            <div class="alert alert-info">
+                                <i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?>
                             </div>
 						<?php } ?>
                     </div>
+
 					<?php if ($review_status) { ?>
                         <div class="rating">
                             <p>
@@ -410,10 +426,12 @@
 						<?php } ?>
                         <div class="<?php echo $class; ?>">
                             <div class="product-thumb transition">
-                                <div class="image"><a href="<?php echo $product['href']; ?>"><img
+                                <div class="image"><a href="<?php echo $product['href']; ?>">
+                                        <img
                                                 src="<?php echo $product['thumb']; ?>"
                                                 alt="<?php echo $product['name']; ?>"
-                                                title="<?php echo $product['name']; ?>" class="img-responsive"/></a>
+                                                title="<?php echo $product['name']; ?>" class="img-responsive"/>
+                                    </a>
                                 </div>
                                 <div class="caption">
                                     <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
@@ -437,7 +455,8 @@
 											<?php if (!$product['special']) { ?>
 												<?php echo $product['price']; ?>
 											<?php } else { ?>
-                                                <span class="price-new"><?php echo $product['special']; ?></span> <span
+                                                <span class="price-new"><?php echo $product['special']; ?></span>
+                                                <span
                                                         class="price-old"><?php echo $product['price']; ?></span>
 											<?php } ?>
 											<?php if ($product['tax']) { ?>
@@ -450,13 +469,18 @@
                                     <button type="button"
                                             onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');">
                                         <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span>
-                                        <i class="fa fa-shopping-cart"></i></button>
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </button>
                                     <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>"
-                                            onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i
-                                                class="fa fa-heart"></i></button>
+                                            onclick="wishlist.add('<?php echo $product['product_id']; ?>');">
+                                        <i
+                                                class="fa fa-heart"></i>
+                                    </button>
                                     <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>"
-                                            onclick="compare.add('<?php echo $product['product_id']; ?>');"><i
-                                                class="fa fa-exchange"></i></button>
+                                            onclick="compare.add('<?php echo $product['product_id']; ?>');">
+                                        <i
+                                                class="fa fa-exchange"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
