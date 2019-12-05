@@ -10,7 +10,7 @@ $_['decimal_point']         = ',';
 $_['thousand_point']        = '.';
 
 // Text
-$_['text_home']             = '<i class="fa fa-home"></i>';
+$_['text_home']             = 'Principala';
 $_['text_yes']              = 'Da';
 $_['text_no']               = 'Nu';
 $_['text_none']             = ' --- Nimic --- ';
